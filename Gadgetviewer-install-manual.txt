@@ -1,0 +1,11 @@
+sudo apt install libgtk2.0-dev
+
+tar xvfz gadgetviewer-1.1.1.tar.gz
+
+./configure --prefix=/home/replica/lib/gadgetviewer/1.1.1 --with-hdf5=/home/replica/lib/hdf5/1.10.1
+
+make
+
+make install
+
+ln -s ~/lib/gadgetviewer/1.1.1/bin/gadgetviewer
